@@ -47,7 +47,7 @@ if (-not (check('uninstall'))) {
       mkdir $download
     }
     "Download cygwin setup.exe..."
-    (New-Object System.Net.WebClient).DownloadFile("http://cygwin.com/setup.exe", $setup_path)
+    (New-Object System.Net.WebClient).DownloadFile("http://cygwin.com/setup-x86_64.exe", $setup_path)
   }
 
   # Run setup
